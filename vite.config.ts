@@ -4,6 +4,7 @@ const { resolve } = require('path')
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  envPrefix:'ENV_',
 //静态资源服务的文件夹
   publicDir: "public",
   base: './',
@@ -17,6 +18,7 @@ export default defineConfig({
     alias: [//配置别名
       { find: '@', replacement: resolve(__dirname, 'src') },
       { find: '~', replacement: resolve(__dirname, 'src/assets') },
+      { find: '&', replacement: resolve(__dirname, 'src/styles') },
     ],
     // 情景导出 package.json 配置中的exports字段
     conditions: [],

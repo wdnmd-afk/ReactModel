@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@function px2vw($px, $base: 1920px) {
+  @return calc($px / $base) * 100vw;
+}

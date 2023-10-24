@@ -1,11 +1,11 @@
 
 import {
-    createBrowserRouter,
+    createBrowserRouter
 } from 'react-router-dom'
 import Test from "@/pages/Test/Test.tsx";
 import Root from "@/pages/Root/Root.tsx";
 
-const router = createBrowserRouter(
+const router:any = createBrowserRouter(
     [
         {
             path:'/',
